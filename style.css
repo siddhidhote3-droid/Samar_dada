@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: cursive;
+  background: linear-gradient(to right, pink, lavender);
+}
+
+/* Navigation bar */
+nav {
+  background-color: white;
+  padding: 12px;
+}
+
+nav a {
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: purple;
+  font-weight: bold;
+}
+
+/* Headings */
+h1 {
+  margin-top: 20px;
+  animation: glow 1s infinite alternate;
+}
+
+/* Wishes box */
+.wish {
+  background: white;
+  margin: 15px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 20px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Author text */
+.author-text {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* Glow animation */
+@keyframes glow {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
