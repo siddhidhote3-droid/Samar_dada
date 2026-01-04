@@ -1,54 +1,118 @@
+/* Google font feel (safe fallback) */
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: cursive;
-  background: linear-gradient(to right, pink, lavender);
+  font-family: "Comic Sans MS", "Segoe UI", cursive;
+  background: linear-gradient(135deg, #ffd6e8, #e0c3fc);
+  min-height: 100vh;
 }
 
 /* Navigation bar */
 nav {
-  background-color: white;
-  padding: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-  margin: 10px;
+  margin: 12px;
   text-decoration: none;
   font-size: 18px;
-  color: purple;
+  color: #7a1fa2;
   font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e91e63;
 }
 
 /* Headings */
 h1 {
-  margin-top: 20px;
-  animation: glow 1s infinite alternate;
+  margin-top: 25px;
+  font-size: 32px;
+  color: #d81b60;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Paragraph text */
+p {
+  font-size: 18px;
+  color: #4a148c;
+  margin: 10px 20px;
+}
+
+/* Images */
+img {
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 /* Wishes box */
 .wish {
   background: white;
-  margin: 15px auto;
-  padding: 15px;
-  width: 80%;
-  border-radius: 20px;
-  font-size: 18px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 18px auto;
+  padding: 18px;
+  width: 85%;
+  border-radius: 25px;
+  font-size: 19px;
+  color: #6a1b9a;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  animation: slideUp 1s ease;
 }
 
 /* Author text */
 .author-text {
   font-size: 20px;
-  margin: 10px;
+  margin: 12px;
+  color: #880e4f;
 }
 
-/* Glow animation */
-@keyframes glow {
+/* Button (cake page) */
+button {
+  padding: 12px 26px;
+  font-size: 18px;
+  background: linear-gradient(to right, #ff4081, #f50057);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
   from {
-    color: red;
+    opacity: 0;
+    transform: translateY(-15px);
   }
   to {
-    color: blue;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    }
